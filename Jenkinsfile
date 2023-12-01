@@ -6,9 +6,9 @@ pipeline {
         stage('Initialize'){
             steps{
                 sh '''
-                apt-get update
-                apt-get install python3
-                apt-get install python3-pip
+                sudo apt-get update
+                sudo apt-get install python3
+                sudo apt-get install python3-pip
                     echo "PATH = ${PATH}"
                     python3 --version
                 '''
