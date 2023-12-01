@@ -1,15 +1,13 @@
 pipeline {
     agent any
-    tools{
-        PythonInstallation python
-    }
+   
 
     stages {
         stage('Initialize'){
             steps{
                 sh '''
                     echo "PATH = ${PATH}"
-                    python --version
+                    python3 --version
                 '''
 
             }
