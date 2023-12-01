@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools{
-        PythonInstallation 'python'
+        PythonInstallation 
     }
 
     stages {
