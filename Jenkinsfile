@@ -1,6 +1,8 @@
 pipeline {
     agent any
+        kubernetes {
 
+        }
     stages {
         stage('Initialize'){
             steps{
